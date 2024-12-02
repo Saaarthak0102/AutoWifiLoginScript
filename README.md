@@ -7,7 +7,7 @@ To use this In-Campus,
 
 1. Download the code file as zip and extract it.
 2. Make sure you have Java on your WINDOWS machine(no cross compatibility for now).
-3. Enter your WiFi Login Credentials where they are mentioned.
+3. Enter your WiFi Login Credentials where they are mentioned. **** (Line 13 and 14 of the "Login.java" file) ****
 4. Execute the "runLogin.vbs" file from the run menu or the terminal, or just simply click it.
 5. The program will execute and show you a notification pop-up if you have been connected successfully or the login has failed.
 
