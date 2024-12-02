@@ -15,14 +15,13 @@ public class Login {
     //That is it!! Now run the file(only after you've entered your username and password correctly)
     private static final String A = String.valueOf(System.currentTimeMillis());
     private static final String PRODUCTTYPE = "0";
-
+    
     public static void main(String[] args) {
         try {
             authenticate();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            // Ensure that the program terminates after processing
             System.exit(0);
         }
     }
@@ -34,7 +33,6 @@ public class Login {
         connection.setRequestMethod("POST");
         connection.setDoOutput(true);
         connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-
         StringBuilder urlParameters = new StringBuilder();
         urlParameters.append("mode=").append(LOGIN_MODE)
                      .append("&username=").append(USERNAME)
@@ -68,8 +66,6 @@ public class Login {
         } else {
             notificationMessage = "Failed to connect. Please check your connection.";
         }
-
-        // Display the notification based on the response
         displayNotification(notificationMessage);
     }
 
